@@ -20,3 +20,20 @@ footer {
     text-align: right; 
     font-style: italic;
 }
+
+a:visited {
+    color: whitesmoke;
+    background-color: palevioletred;
+}
+
+a:hover {
+    color: lawngreen;
+    text-decoration: underline;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+a:active {
+    color: green;
+    background-color: palevioletred;
+}
