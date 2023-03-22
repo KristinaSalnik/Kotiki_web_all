@@ -6,14 +6,14 @@ body {
 }
 
 header {
-    background-color: black; 
-    color: lightgoldenrodyellow; 
+    background: linear-gradient(to top, black, palevioletred);
+    color: lightgoldenrodyellow;
     padding: 15px; 
     font-size: 16pt;
 }
 
 footer {
-    background-color: black; 
+    background: linear-gradient(to bottom, black, palevioletred);
     color: lightgoldenrodyellow; 
     padding: 15px; 
     font-size: 10pt; 
@@ -21,13 +21,18 @@ footer {
     font-style: italic;
 }
 
+a {
+    color: green;
+    text-decoration: none;
+}
+
 a:visited {
-    color: whitesmoke;
+    color: rgba(199, 25, 106, 0.932);
     background-color: palevioletred;
 }
 
 a:hover {
-    color: lawngreen;
+    color: rgb(93, 145, 41);
     text-decoration: underline;
     background-color: rgb(255, 255, 255);
     font-weight: bold;
