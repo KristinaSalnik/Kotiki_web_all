@@ -40,6 +40,28 @@
             margin-left: 2cm;
             text-indent: 0;
         }
+
+        .shadow{
+            text-shadow: 5px 5px 2px gray;
+        }
+
+        .shadow2{
+            text-shadow: -5px 5px 2px gray;
+        }
+
+        .shadow3{
+            text-shadow: 0px 0px 3px royalblue;
+        }
+
+        .shadow4{
+            transition: 600ms 1s;
+           
+        }
+
+        .shadow4:hover{
+            opacity: 1;
+             text-shadow: 3px 3px 3px gray;
+        }
     </style>
 </head>
 <body>
@@ -47,7 +69,7 @@
         НГТУ, ФБ, Лабораторная работа 3
     </header>
     <main>
-        <h1>Расчет (формула)</h1>
+        <h1><div class="shadow4">Расчет (формула)</div></h1>
 
         <div>
             Расчет сводится к определению разницы между активами и пассивами
@@ -101,6 +123,9 @@
         <div class="formula">
         Чистые активы = стр.1300 - ЗУ + ДБП
         </div>
+        <div class="shadow">Тень</div>
+        <div class="shadow2">“Синяя тень слева снизу</div>
+        <div class="shadow3">Синее размытие</div>
     </main>
     <footer>
         &copy; Сальник Кристина, ФБИ-14, 2 курс, 2023
