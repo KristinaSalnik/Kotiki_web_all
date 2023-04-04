@@ -12,6 +12,16 @@ header {
     font-size: 16pt;
 }
 
+header:hover {
+    background: linear-gradient(to top, black, bisque);
+}
+
+header:active {
+    color: bisque;
+    font-size: 20px;
+
+}
+
 footer {
     background: linear-gradient(to bottom, black, palevioletred);
     color: lightgoldenrodyellow; 
@@ -19,6 +29,15 @@ footer {
     font-size: 10pt; 
     text-align: right; 
     font-style: italic;
+}
+
+footer:hover {
+    background: linear-gradient(to bottom, black, gray);
+}
+
+footer:active {
+    color: bisque;
+    font-size: 20px;
 }
 
 a {
