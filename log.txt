@@ -1,228 +1,77 @@
-commit 6dc22bb6b750007f4b4cf416f33bb17d12752d9c
+commit 05b2d0c45e2113858392163a023f814aaae460c7
 Author: Kristina <salnikkristina@yandex.ru>
-Date:   Wed Mar 8 21:12:13 2023 +0700
+Date:   Tue Apr 4 23:50:48 2023 +0700
 
-    последнее
+    Переход для шапки и подвала
 
-commit 6362655848692b3da57a944b00fe121cd199c19c
-Merge: 88a1ece bb34d1d
+commit ec1dce06bcfa94d2e44982a78e9db5a72f01a567
 Author: Kristina <salnikkristina@yandex.ru>
-Date:   Wed Mar 8 21:10:19 2023 +0700
+Date:   Tue Apr 4 23:17:09 2023 +0700
 
-    Merge branch 'main' of https://github.com/KristinaSalnik/Kotiki_web_all
+    new 10 pnkt
 
-commit bb34d1dcd52dd9065546aab2d6b0889efbe542e4
+commit 51c1ef0f6a2e8b6ed2a1ee9579abd8a6368f21c6
+Author: Kristina <salnikkristina@yandex.ru>
+Date:   Mon Apr 3 22:13:13 2023 +0700
+
+    Тени
+
+commit 3d97003c56791ef73add96a9a956fd720e37d678
+Author: Kristina <salnikkristina@yandex.ru>
+Date:   Mon Apr 3 21:24:44 2023 +0700
+
+    bbbb
+
+commit ee2b324c5db95172af6a3f52d79e2bfd4c9e2a5c
+Author: Kristina <v.demenev1905@mail.ru>
+Date:   Wed Mar 22 13:19:29 2023 +0700
+
+    Gradient
+
+commit 6968f319ccf921f1d4a85673b6269c5d7c75e10d
+Author: Kristina <v.demenev1905@mail.ru>
+Date:   Wed Mar 22 12:58:55 2023 +0700
+
+    Переход для формул
+
+commit c9cef6f4a2a654a45d694f584a415fb519cde939
+Author: Kristina <v.demenev1905@mail.ru>
+Date:   Wed Mar 22 12:53:50 2023 +0700
+
+    Прозрачность
+
+commit 9939b682d769edd453e8a86605389ff1829ca704
+Author: Kristina <v.demenev1905@mail.ru>
+Date:   Wed Mar 22 12:42:52 2023 +0700
+
+    Тукст про формулу
+
+commit d08eeda326d367cd139c421fa681f8df47a924a3
+Author: Kristina <v.demenev1905@mail.ru>
+Date:   Wed Mar 22 12:10:01 2023 +0700
+
+    Заготовка к третьей лабораторной
+
+commit aa238d52f4ab7257ad4e44e675ee2b66f4f4829e
+Author: Kristina <v.demenev1905@mail.ru>
+Date:   Wed Mar 22 11:47:00 2023 +0700
+
+    Стили ссылок
+
+commit e23363acdc0038524ed898a0560fe67e90ec0fca
+Author: Kristina <v.demenev1905@mail.ru>
+Date:   Wed Mar 22 11:11:10 2023 +0700
+
+    Стили меню
+
+commit e35d2599b9faeeea55f541cd111782c77466a0a1
+Author: Kristina <v.demenev1905@mail.ru>
+Date:   Wed Mar 22 10:37:15 2023 +0700
+
+    Лабораторная работа 3
+
+commit 7c9e7f08aaeb6896dac93e165af2562def0b291a
 Author: クリスティーナ <125592731+KristinaSalnik@users.noreply.github.com>
-Date:   Wed Mar 8 21:07:52 2023 +0700
+Date:   Wed Mar 8 22:12:26 2023 +0700
 
     Delete CNAME
-
-commit 88a1ece9a5faa5dd82a183a90e8cb2200e0f2e75
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Wed Mar 8 20:39:43 2023 +0700
-
-    end lab2
-
-commit a68afe9eb767f42865019db11565210fc4009778
-Author: クリスティーナ <125592731+KristinaSalnik@users.noreply.github.com>
-Date:   Wed Mar 8 20:35:54 2023 +0700
-
-    Create CNAME
-
-commit 33349e44b167c14258de309a41ac6574417ee80b
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Wed Mar 8 19:34:50 2023 +0700
-
-    меню
-
-commit 0651a2e52f9b4b3e9845d55f934e3819d02344aa
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Wed Mar 8 18:00:57 2023 +0700
-
-    аготовка меню
-
-commit 37d8628b99330ab1cd30daba19c33396f8e7bf13
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Wed Mar 8 17:59:06 2023 +0700
-
-    jjj
-
-commit bef6103074bb249b486b3a42dd22488e9e51ca6d
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Wed Mar 8 17:36:53 2023 +0700
-
-    аготовка меню
-
-commit ca04c233b0fda1c0e22b3ccbb876e3670323e904
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Wed Mar 8 17:31:15 2023 +0700
-
-    заготовка меню
-
-commit ef63e7621599970c195baae687b4849c2d02de20
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Wed Mar 8 17:26:27 2023 +0700
-
-    Стили второй таблицы
-
-commit 19cbbc4ad15379a57cc5873b03e3a5471441fc0f
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Wed Mar 8 17:22:11 2023 +0700
-
-    Bыделение новинок
-
-commit 6ba71cb36ccb3e2dbd46dc060d5837f10dd0be0f
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Wed Mar 8 17:08:24 2023 +0700
-
-    Bыделение слова Compare
-
-commit f455faf671ee5729a4a64965d5f883ca2798c983
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Wed Mar 8 16:56:20 2023 +0700
-
-    Стили подвала
-
-commit 7ea511e5838204114f550839b6aeedaf65321bfc
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Wed Mar 8 16:37:31 2023 +0700
-
-    Стили заголовка
-
-commit dc329f91d6549e37f66cac3b51a6449ed53cfdfd
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Wed Mar 8 16:25:21 2023 +0700
-
-    Стили body
-
-commit 90d4f17474fe0bc6072751992581988eac2d68ff
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Wed Mar 8 16:11:52 2023 +0700
-
-    USB-дубликаторы Intelligent Series
-
-commit 88c5ee8e32fd0e29b39db812224509f0a6ca0f54
-Author: Шишкин Юстиниан <mister.yustinian@yandex.ru>
-Date:   Wed Feb 22 13:19:52 2023 +0700
-
-    dodelat tablitsu
-
-commit 0f02e3f6e4f25d886669cf55ad2cae2644756b48
-Author: Шишкин Юстиниан <mister.yustinian@yandex.ru>
-Date:   Wed Feb 22 13:09:59 2023 +0700
-
-    USB dublikatory serii Super-Tower
-
-commit 68b981cd5cf6eb2763f0e5017ea92c82ae95cb54
-Author: Шишкин Юстиниан <mister.yustinian@yandex.ru>
-Date:   Wed Feb 22 12:52:31 2023 +0700
-
-    Tablitsa
-
-commit a36575668f220c23c823e69c665307dfa256004e
-Author: Шишкин Юстиниан <mister.yustinian@yandex.ru>
-Date:   Wed Feb 22 12:14:00 2023 +0700
-
-    Spiski
-
-commit 195c9e6832ad195a6a420ba245118ae87f9a4b86
-Author: Шишкин Юстиниан <mister.yustinian@yandex.ru>
-Date:   Wed Feb 22 11:56:33 2023 +0700
-
-    USB-dublikator
-
-commit 36cb2a92f601e4801f4510f439cf537b325a5fb1
-Author: Шишкин Юстиниан <mister.yustinian@yandex.ru>
-Date:   Wed Feb 22 11:35:47 2023 +0700
-
-    Zagotovka
-
-commit c2bb5ecd74cadde10dd1e1206e9aa27a9df3c089
-Author: Шишкин Юстиниан <mister.yustinian@yandex.ru>
-Date:   Wed Feb 22 10:44:44 2023 +0700
-
-    Лабораторная работа 2
-
-commit 29afcb6df38929c55e563c5872b5b8078e89d59d
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Sat Feb 18 19:05:54 2023 +0700
-
-    Форматирование текста
-
-commit 7bc15bd72691ef41621201d8e582e124e36eb55d
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Sat Feb 18 18:35:14 2023 +0700
-
-    Дополнительный текст
-
-commit 65509056bf68343002b329d2c6c414833ddf43eb
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Sat Feb 18 18:24:31 2023 +0700
-
-    Структура документа
-
-commit 25f0d9f191deaf7bd6f1a5a4d9899ca8c804dd99
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Sat Feb 18 18:00:09 2023 +0700
-
-    Добавлены две картинки
-
-commit 14e67a927a5dbc20cb8da6115278d96db4a5be59
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Sat Feb 18 17:52:22 2023 +0700
-
-    Изменен размер картинки
-
-commit 3263d1f03b27d090172004cf31efcc2bb0684765
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Sat Feb 18 17:45:24 2023 +0700
-
-    Первая картинка
-
-commit 605c326801f770eabd1f1ec07c4c364610930027
-Author: クリスティーナ <125592731+KristinaSalnik@users.noreply.github.com>
-Date:   Sat Feb 18 17:34:01 2023 +0700
-
-    Добавлены файлы "дисконт"
-
-commit a36d96e1a0ccc2decdca5442a39c140a8429bcfc
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Sat Feb 18 17:25:39 2023 +0700
-
-    Абзацы
-
-commit 9a98e384b33d0bf51caace18a075a238a25e741c
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Sat Feb 18 17:02:45 2023 +0700
-
-    Выделение жирным
-
-commit 07b7b6ab4bfdba509311174bec4628e5757438e1
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Sat Feb 18 16:46:45 2023 +0700
-
-    выделение курсивом слова разница
-
-commit 9f52f77ccb315d1cceb207a271388fe3fdb59cdb
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Sat Feb 18 16:45:09 2023 +0700
-
-    выделение курсивом слова вычет
-
-commit 7379334b1935728ff3b233a397c7a1b03750e2b7
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Sat Feb 18 15:32:36 2023 +0700
-
-    выделение курсивом слова discount
-
-commit 1f91a0f49d781a457c92684b6f856edd6fb0bcf3
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Sat Feb 18 15:24:33 2023 +0700
-
-    определение дисконта
-
-commit c9b37fd42f43752b9ae2535518656cfadd93d509
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Sat Feb 18 15:10:40 2023 +0700
-
-    лабораторная работа 1
