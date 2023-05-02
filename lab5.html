@@ -7,10 +7,13 @@
     <title>Сальник Кристина Андреевна, Лабораторная 5</title>
     <link rel="stylesheet" href="main.css">
     <script>
-        let a = 5154;
-        let b = 7891;
-        let result = a + b;
-        alert(result);
+        function showSum() {
+            let a = 5154;
+            let b = 7891;
+            let result = a + b;
+            alert('Сумма ' + a + ' и ' + b + ' равна ' + result);
+        }
+
     </script>
     <style> 
         .message {
@@ -36,7 +39,7 @@
     </header>
 
     <main>
-        <div class="message">Сколько будет 5154+7891?</div>
+        <div class="message" onclick="showSum()">Сколько будет 5154+7891?</div>
         <div class="message">Узнать, кто автор страницы</div>
     </main>
 
