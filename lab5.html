@@ -51,6 +51,14 @@
             alert('Произведение ' + g + ' и ' + h + ' равна ' + result);
         }
 
+        function changeOutput(buttonNum, backColor, textColor, borderColor){
+            let output = document.getElementById('output');
+            output.innerHTML = 'Нажатая кнопка ' + buttonNum;
+            output.style.backgroundColor = backColor;
+            output.style.color = textColor;
+            output.style.border = borderColor;
+        }
+
     </script>
     <style> 
         .message {
@@ -66,7 +74,11 @@
             color: black;
        }
 
-      
+      #output {
+        border: 1px solid;
+        width: 300px;
+        height: 40px;
+      }
        
     </style>
 </head>
@@ -93,6 +105,15 @@
         <label>Второе число: <input type="number" value="0" id="numberH"></label><br>
         <div class="message" onclick="showMul()">Найти произведение чисел</div><br>
         
+        <div>
+            <input type="button" value="Кнопка 1" onclick="changeOutput(1, 'palevioletred', 'black', '1px solid black')">
+            <input type="button" value="Кнопка 2" onclick="changeOutput(2, 'white', 'palevioletred', '3px solid black')">
+            <input type="button" value="Кнопка 3" onclick="changeOutput(3, 'black', 'white', '5px solid black')">
+            <input type="button" value="Кнопка 4" onclick="changeOutput(4, 'black', 'bisque', '2px solid black')">
+        </div>
+
+        <div id="output"></div>
+
     </main>
 
     <footer>
