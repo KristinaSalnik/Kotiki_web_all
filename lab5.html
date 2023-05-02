@@ -21,6 +21,36 @@
             alert(author);
         }
 
+        function showSub() {
+            let inputC = document.getElementById('numberC');
+            let inputD = document.getElementById('numberD');
+
+            let c = parseInt(inputC.value);
+            let d = parseInt(inputD.value);
+            let result = c - d;
+            alert('Разность ' + c + ' и ' + d + ' равна ' + result);
+        }
+
+        function showDiv() {
+            let inputI = document.getElementById('numberI');
+            let inputF = document.getElementById('numberF');
+
+            let i = parseInt(inputI.value);
+            let f = parseInt(inputF.value);
+            let result = i / f;
+            alert('Частное ' + i + ' и ' + f + ' равна ' + result);
+        }
+
+        function showMul() {
+            let inputG = document.getElementById('numberG');
+            let inputH = document.getElementById('numberH');
+
+            let g = parseInt(inputG.value);
+            let h = parseInt(inputH.value);
+            let result = g * h;
+            alert('Произведение ' + g + ' и ' + h + ' равна ' + result);
+        }
+
     </script>
     <style> 
         .message {
@@ -49,7 +79,20 @@
         <label>Первое число: <input type="number" value="5154" id="numberA"></label><br>
         <label>Второе число: <input type="number" value="7891" id="numberB"></label><br>
         <div class="message" onclick="showSum()">Найти сумму чисел</div>
-        <div class="message" onclick="showAuthor()">Узнать, кто автор страницы</div>
+        <div class="message" onclick="showAuthor()">Узнать, кто автор страницы</div><br>
+
+        <label>Первое число: <input type="number" value="0" id="numberC"></label><br>
+        <label>Второе число: <input type="number" value="0" id="numberD"></label><br>
+        <div class="message" onclick="showSub()">Найти разность чисел</div><br>
+
+        <label>Первое число: <input type="number" value="0" id="numberI"></label><br>
+        <label>Второе число: <input type="number" value="0" id="numberF"></label><br>
+        <div class="message" onclick="showDiv()">Найти частное чисел</div><br>
+
+        <label>Первое число: <input type="number" value="0" id="numberG"></label><br>
+        <label>Второе число: <input type="number" value="0" id="numberH"></label><br>
+        <div class="message" onclick="showMul()">Найти произведение чисел</div><br>
+        
     </main>
 
     <footer>
