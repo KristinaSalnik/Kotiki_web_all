@@ -51,6 +51,22 @@
             alert('Произведение ' + g + ' и ' + h + ' равна ' + result);
         }
 
+        function showSumKorz() {
+            let inputJ = document.getElementById('numberJ');
+            let inputK = document.getElementById('numberK');
+            let inputL = document.getElementById('numberL');
+            let inputM = document.getElementById('numberM');
+            let inputN = document.getElementById('numberN');
+
+            let j = parseInt(inputJ.value);
+            let k = parseInt(inputK.value);
+            let l = parseInt(inputL.value);
+            let m = parseInt(inputM.value);
+            let n = parseInt(inputN.value);
+            let result = j + k + l + m + n;
+            alert('Сумма ' + j + ' и ' + k + ',' + l + ',' + m + ',' + n + ' равна ' + result);
+        }
+
         function changeOutput(buttonNum, backColor, textColor, borderColor){
             let output = document.getElementById('output');
             output.innerHTML = 'Нажатая кнопка ' + buttonNum;
@@ -79,6 +95,12 @@
         width: 300px;
         height: 40px;
       }
+
+      .korzina {
+        font-size: medium;
+        color: palevioletred;
+        text-align: center;
+      }
        
     </style>
 </head>
@@ -104,7 +126,8 @@
         <label>Первое число: <input type="number" value="0" id="numberG"></label><br>
         <label>Второе число: <input type="number" value="0" id="numberH"></label><br>
         <div class="message" onclick="showMul()">Найти произведение чисел</div><br>
-        
+
+
         <div>
             <input type="button" value="Кнопка 1" onclick="changeOutput(1, 'palevioletred', 'black', '1px solid black')">
             <input type="button" value="Кнопка 2" onclick="changeOutput(2, 'white', 'palevioletred', '3px solid black')">
@@ -113,6 +136,35 @@
         </div>
 
         <div id="output"></div>
+
+        
+        <div class="korzina">
+
+            <div style="font-size: xx-large;"><b>Корзина товаров</b></div>
+
+            <div><b>Шоколад (120р/шт):</b></div>
+            <label><input type="number" value="1" id="numberJ"></label><br>
+            <br>
+
+            <div><b>Молоко (150р/шт):</b></div>
+            <label><input type="number" value="1" id="numberK"></label><br>
+            <br>
+
+            <div><b>Кофе (400р/шт):</b></div>
+            <label><input type="number" value="1" id="numberL"></label><br>
+            <br>
+
+            <div><b>Печенье (75р/шт):</b></div>
+            <label><input type="number" value="1" id="numberM"></label><br>
+            <br>
+
+            <div><b>Чай (30р/шт):</b></div>
+            <label><input type="number" value="1" id="numberN"></label><br>
+            <br>
+
+            <div class="message" onclick="showSumKorz()">Рассчитать</div><br>
+
+        </div>
 
     </main>
 
