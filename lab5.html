@@ -63,8 +63,9 @@
             let l = parseInt(inputL.value);
             let m = parseInt(inputM.value);
             let n = parseInt(inputN.value);
-            let result = j + k + l + m + n;
-            alert('Сумма ' + j + ' и ' + k + ',' + l + ',' + m + ',' + n + ' равна ' + result);
+            let result = j * 120 + k * 150 + l * 400 + m * 75+ n * 30;
+            let output1 = document.getElementById('output1');
+            output1.innerHTML = 'ИТОГО к оплате: '+ result +' рублей';
         }
 
         function changeOutput(buttonNum, backColor, textColor, borderColor){
@@ -101,6 +102,10 @@
         color: palevioletred;
         text-align: center;
       }
+
+      #output1{
+        font-size: 17pt;
+        color:palevioletred;}
        
     </style>
 </head>
@@ -143,26 +148,27 @@
             <div style="font-size: xx-large;"><b>Корзина товаров</b></div>
 
             <div><b>Шоколад (120р/шт):</b></div>
-            <label><input type="number" value="1" id="numberJ"></label><br>
+            <label><input type="number" value="0" min="0" id="numberJ"></label><br>
             <br>
 
             <div><b>Молоко (150р/шт):</b></div>
-            <label><input type="number" value="1" id="numberK"></label><br>
+            <label><input type="number" value="0" min="0" id="numberK"></label><br>
             <br>
 
             <div><b>Кофе (400р/шт):</b></div>
-            <label><input type="number" value="1" id="numberL"></label><br>
+            <label><input type="number" value="0" min="0" id="numberL"></label><br>
             <br>
 
             <div><b>Печенье (75р/шт):</b></div>
-            <label><input type="number" value="1" id="numberM"></label><br>
+            <label><input type="number" value="0" min="0" id="numberM"></label><br>
             <br>
 
             <div><b>Чай (30р/шт):</b></div>
-            <label><input type="number" value="1" id="numberN"></label><br>
+            <label><input type="number" value="0" min="0" id="numberN"></label><br>
             <br>
 
             <div class="message" onclick="showSumKorz()">Рассчитать</div><br>
+            <div id="output1"></div>
 
         </div>
 
