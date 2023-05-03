@@ -47,8 +47,10 @@
                 document.getElementById('try-count').innerHTML = count;
             }
 
-            function again(params){
-
+            function again(){
+                let screens = document.getElementsByClassName('game');
+                screens[2].style.display = 'none';
+                screens[1].style.display = 'block';
             }
         }
     </script>
