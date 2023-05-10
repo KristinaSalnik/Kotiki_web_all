@@ -43,14 +43,19 @@
                 let screens = document.getElementsByClassName ('game');
                 screens[1].style.display = 'none';
                 screens[2].style.display = 'block';
+                let displayNumber = document.getElementById('number');
                 document.getElementById('number').innerHTML = number;
                 document.getElementById('try-count').innerHTML = count;
             }
 
             function again(){
+                count=0;
                 let screens = document.getElementsByClassName('game');
                 screens[2].style.display = 'none';
                 screens[1].style.display = 'block';
+                number = Math.floor(Math.random() * 100) + 1;
+                document.getElementById('try-count').innerHTML = count;
+                document.getElementById('result').innerHTML = "";
             }
         }
     </script>
