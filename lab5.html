@@ -76,6 +76,10 @@
             output.style.border = borderColor;
         }
 
+        function krug(h) {
+            h.style.opacity = "0";
+        }
+
     </script>
     <style> 
         .message {
@@ -114,6 +118,114 @@
             border-radius: 50%;
             background: white;
         }
+
+        .one {
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        background-color: green;
+        color: aliceblue;
+        text-align: center;
+       }
+       .two {
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        background-color: blue;
+        color: aliceblue;
+        text-align: center;
+        position: absolute;
+        left: 80px;
+        top: 550px;
+       }
+       .three{
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        background-color: yellow;
+        color: aliceblue;
+        text-align: center;
+        position: absolute;
+        left: 140px;
+        top: 550px;
+       }
+       .four{
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        background-color: purple;
+        color: aliceblue;
+        text-align: center;
+        position: absolute;
+        left: 200px;
+        top: 550px;
+       }
+       .five{
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        background-color: darkgreen;
+        color: aliceblue;
+        text-align: center;
+        position: absolute;
+        left: 260px;
+        top: 550px;
+       }
+       .six{
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        background-color: aquamarine;
+        color: aliceblue;
+        text-align: center;
+        position: absolute;
+        left: 320px;
+        top: 550px;
+       }
+       .seven{
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        background-color: tomato;
+        color: aliceblue;
+        text-align: center;
+        position: absolute;
+        left: 380px;
+        top: 550px;
+       }
+       .eight{
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        background-color: darkmagenta;
+        color: aliceblue;
+        text-align: center;
+        position: absolute;
+        left: 440px;
+        top: 550px;
+       }
+       .nine{
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        background-color: maroon;
+        color: aliceblue;
+        text-align: center;
+        position: absolute;
+        left: 500px;
+        top: 550px;
+       }
+       .ten{
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        background-color: chartreuse;
+        color: aliceblue;
+        text-align: center;
+        position: absolute;
+        left: 560px;
+        top: 550px;
+       }
        
     </style>
 </head>
@@ -178,12 +290,41 @@
             <div class="message" onclick="showSumKorz()">Рассчитать</div><br>
             <div id="output1"></div>
 
+
+
+            <div id="a">
+                <button class="one" onclick="krug(this)">1</button>  
+            </div>
+            <div id="b">
+                <button class="two" onclick="krug(this)">2</button>
+            </div>
+            <div id="c">
+                <button class="three" onclick="krug(this)">3</button>
+            </div>
+            <div id="d">
+                <button class="four" onclick="krug(this)">4</button>
+            </div>
+            <div id="e">
+                <button class="five" onclick="krug(this)">5</button>
+            </div>
+            <div id="f">
+                <button class="six" onclick="krug(this)">6</button>
+            </div>
+            <div id="j">
+                <button class="seven" onclick="krug(this)">7</button>
+            </div>
+            <div id="h">
+                <button class="eight" onclick="krug(this)">8</button>
+            </div>
+            <div id="i">
+                <button class="nine" onclick="krug(this)">9</button>
+            </div>
+            <div id="g">
+                <button class="ten" onclick="krug(this)">10</button>
+            </div>
+
         </div>
-
-        
-
     </main>
-
     <footer>
         &copy; Сальник Кристина, ФБИ-14, 2 курс, 2023
     </footer>
