@@ -15,6 +15,7 @@
             height: auto;
             margin: 15px auto;
             text-align: center;
+            padding: 20px 50px;
         }
     </style>
     <script>
@@ -40,7 +41,7 @@
             }
 
             else {
-                let screens = document.getElementsByClassName ('game');
+                let screens = document.getElementsByClassName('game');
                 screens[1].style.display = 'none';
                 screens[2].style.display = 'block';
                 let displayNumber = document.getElementById('number');
@@ -48,15 +49,23 @@
                 document.getElementById('try-count').innerHTML = count;
             }
 
-            function again(){
+            if(userNumber < 1) {
+                message.innerHTML = 'Число должно быть в диапазоне от 1 до 100';
+            }
+            else if(userNumber > 100) {
+                message.innerHTML = 'Число должно быть в диапазоне от 1 до 100';
+            }
+
+            function again() {
                 count=0;
                 let screens = document.getElementsByClassName('game');
                 screens[2].style.display = 'none';
-                screens[1].style.display = 'block';
-                number = Math.floor(Math.random() * 100) + 1;
+                screens[1].style.display = 'block'; 
+                number = Math.floor(Math.random() * 100) + 1; 
                 document.getElementById('try-count').innerHTML = count;
+                //document.getElementById('result').style.display = 'none';
                 document.getElementById('result').innerHTML = "";
-            }
+        }
         }
     </script>
 </head>
@@ -85,7 +94,7 @@
             <h1>Поздравляем, вы выиграли!</h1>
             <div> Задуманное число: <span id="number"></span></div>
             <div>Количество попыток: <span id="try-count"></span></div>
-            <div> 
+            <div>
                 <button onclick="again()">Сыграть еще раз</button>
             </div>
         </div>
