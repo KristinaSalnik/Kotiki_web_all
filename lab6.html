@@ -55,7 +55,8 @@
             position: relative;
             text-align: center;
             top: 5px;
-            cursor: pointer;   
+            cursor: pointer; 
+            transform: rotate();   
         }
 
     </style>
@@ -107,60 +108,64 @@
                 document.getElementById('try-count').innerHTML = count;
                 //document.getElementById('result').style.display = 'none';
                 document.getElementById('result').innerHTML = "";
-        }
+            }
 
 
-        function prav() {
-            let scrin = document.getElementsByClassName('pravila');
-            scrin[0].style.display = 'none';
-            scrin[1].style.display = 'block';
-        }
-        function skrit() {
-            let scrin = document.getElementsByClassName('pravila');
-            scrin[1].style.display = 'none';
-            scrin[0].style.display = 'block';  
-        }
+            function prav() {
+                let scrin = document.getElementsByClassName('pravila');
+                scrin[0].style.display = 'none';
+                scrin[1].style.display = 'block';
+            }
+            function skrit() {
+                let scrin = document.getElementsByClassName('pravila');
+                scrin[1].style.display = 'none';
+                scrin[0].style.display = 'block';  
+            }
 
-        function changeColor(div) {
-           if(div.style.backgroundColor == 'yellow') {
-            div.style.backgroundColor = 'red';
-            div.style.color = 'blue';
-            document.getElementById('color-name').innerHTML = 'красный';
-           }
-           else if(div.style.backgroundColor == 'red') {
-            div.style.backgroundColor = 'black';
-            div.style.color = 'yellow';
-            document.getElementById('color-name').innerHTML = 'черный';
-           }
-           else if(div.style.backgroundColor == 'black') {
-            div.style.backgroundColor = 'blue';
-            div.style.color = 'black';
-            document.getElementById('color-name').innerHTML = 'синий';
-           }
-           else if(div.style.backgroundColor == 'purple') {
-            div.style.backgroundColor = 'pink';
-            div.style.color = 'green';
-            document.getElementById('color-name').innerHTML = 'розовый';
-           }
-           else {
-            div.style.backgroundColor = 'yellow';
-            div.style.color = 'rgb(121, 44, 44)';
-            document.getElementById('color-name').innerHTML = 'желтый';
-           }
-        }
+            function changeColor(div) {
+            if(div.style.backgroundColor == 'yellow') {
+                div.style.backgroundColor = 'red';
+                div.style.color = 'blue';
+                document.getElementById('color-name').innerHTML = 'красный';
+            }
+            else if(div.style.backgroundColor == 'red') {
+                div.style.backgroundColor = 'black';
+                div.style.color = 'yellow';
+                document.getElementById('color-name').innerHTML = 'черный';
+            }
+            else if(div.style.backgroundColor == 'black') {
+                div.style.backgroundColor = 'blue';
+                div.style.color = 'black';
+                document.getElementById('color-name').innerHTML = 'синий';
+            }
+            else if(div.style.backgroundColor == 'purple') {
+                div.style.backgroundColor = 'pink';
+                div.style.color = 'green';
+                document.getElementById('color-name').innerHTML = 'розовый';
+            }
+            else {
+                div.style.backgroundColor = 'yellow';
+                div.style.color = 'rgb(121, 44, 44)';
+                document.getElementById('color-name').innerHTML = 'желтый';
+            }
+            }
 
-        function plase(smena) {
-          if (smena.style.float == 'left'){
-            smena.style.float = 'right';
-            smena.style.transition = '10000ms 1s';
-            smena.style.transform = 'rotate(4turn)';
-          }
-           else {
-            smena.style.transform = 'rotate()';
-            smena.style.float = 'left';
-            smena.style.transition = '10000ms 1s';  
-          }
+            function plase(smena) {
+            if (smena.style.float == 'left'){
+                smena.style.float = 'right';
+                smena.style.transition = '1000ms 1s';
+                if (smena.style.transform = 'rotate()'){
+                    smena.style.transform = 'rotate(4turn)';
+                }
+            }
+            else {
+                smena.style.float = 'left';
+                smena.style.transition = '10000ms 1s'; 
+                if(smena.style.transform = 'rotate(4turn)'){
+                smena.style.transform = 'rotate()' 
+            }
         }
+    }
         
     </script>
 </head>
