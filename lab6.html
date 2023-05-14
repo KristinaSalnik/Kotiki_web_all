@@ -9,7 +9,7 @@
 
     <style>
         .footer {
-            position: absolute;
+            position: relative;
             bottom: 0;
             width: 100%;
         }
@@ -70,6 +70,11 @@
             border-radius: 5px;
             border: 2px solid black;
             cursor: pointer;
+        }
+
+        .filter {
+            margin-top: 200px;
+            text-align: center;
         }
 
     </style>
@@ -188,6 +193,58 @@
                 k.style.width = '100px'
             }
         }
+
+        function filter() {
+            let color = document.getElementById('wear-color').value;
+            let type = document.getElementById('wear-type').value;
+            let wear = document.getElementById('wear');
+
+            if(color == 'Красный' && type == 'Футболка'){
+                wear.src = 'https://cdn1.ozone.ru/s3/multimedia-x/6035171961.jpg';
+                wear.style.width = '30%'
+                wear.style.height = '30%'
+            }
+            else if(color == 'Красный' && type == 'Поло'){
+                wear.src = 'https://eklektika.ru/foto-tovara2/3/3/1/3311228_2.jpg';
+                wear.style.width = '30%'
+                wear.style.height = '30%'
+            }
+            else if(color == 'Красный' && type == 'Майка'){
+                wear.src = 'https://images-eu.ssl-images-amazon.com/images/I/31bmPptVV4L._UL1000_.jpg';
+                wear.style.width = '30%'
+                wear.style.height = '30%'
+            }
+            else if(color == 'Белый' && type == 'Футболка'){
+                wear.src = 'http://sc01.alicdn.com/kf/HTB1sP_PuFGWBuNjy0Fbq6z4sXXa1/wholesale-plain-white-100-cotton-t-shirts.jpg';
+                wear.style.width = '30%'
+                wear.style.height = '30%'
+            }
+            else if(color == 'Белый' && type == 'Поло'){
+                wear.src = 'https://maldex-gifts.ru/i/product/G-01179102XXL.jpg';
+                wear.style.width = '30%'
+                wear.style.height = '30%'
+            }
+            else if(color == 'Белый' && type == 'Майка'){
+                wear.src = 'https://cdn2.chikiriki.club/files/ba/ba095d52f80811ea83017c8bca00012f.jpg';
+                wear.style.width = '30%'
+                wear.style.height = '30%'
+            }
+            else if(color == 'Черный' && type == 'Футболка'){
+                wear.src = 'https://static.tildacdn.com/stor3830-3633-4463-b461-383762343435/15170997.jpg';
+                wear.style.width = '30%'
+                wear.style.height = '30%'
+            }
+            else if(color == 'Черный' && type == 'Поло'){
+                wear.src = 'https://sportkind.ru/media/image/ac/fc/g0/126619-000_f_600x600@2x.jpg';
+                wear.style.width = '30%'
+                wear.style.height = '30%'
+            }
+            else if(color == 'Черный' && type == 'Майка'){
+                wear.src = 'https://1souvenir.ru/d/3000/d/677ccdc1-8ae2-11e6-941d-00155d640301.jpg';
+                wear.style.width = '30%'
+                wear.style.height = '30%'
+            }
+        }
         
     </script>
 </head>
@@ -244,7 +301,26 @@
             Щелкни меня
         </div>
 
-        <div class="block" id = 'izm' onclick="block(this)"></div>
+        <div class="block" onclick="block(this)"></div>
+        <div class="filter">
+            Цвет одежды:
+            <select id="wear-color">
+                <option>Красный</option>
+                <option>Белый</option>
+                <option>Черный</option>
+            </select><br>
+
+            Тип одежды:
+            <select id="wear-type">
+                <option>Футболка</option>
+                <option>Поло</option>
+                <option>Майка</option>
+            </select><br>
+
+            <button onclick='filter(this)'>OK</button><br>
+
+            <img id="wear">
+        </div>
 
     </main>
 </body>
