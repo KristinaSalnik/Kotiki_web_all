@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="main.css">
 
     <style>
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
         .game {
             border: 2px solid;
             border-radius: 7px;
@@ -24,6 +29,35 @@
             margin: 10px 500px;
             padding: 15px 10px;
         }
+
+        .yellow{
+            border-radius: 5px;
+            border: 2px solid rgb(121, 44, 44);
+            background-color: rgb(255, 255, 60);
+            color: rgb(121, 44, 44);
+            position: relative;
+            left: -650px;
+            margin: 30px 650px;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .c{
+            width: 150px;
+            height: 100px;
+            float: left;
+            background-color: crimson;
+            color: antiquewhite;
+            border: 2px solid black;
+            border-radius: 5px;
+            vertical-align: middle;
+            line-height: 90px;
+            position: relative;
+            text-align: center;
+            top: 5px;
+            cursor: pointer;   
+        }
+
     </style>
     <script>
         let number;
@@ -62,6 +96,7 @@
             else if(userNumber > 100) {
                 message.innerHTML = 'Число должно быть в диапазоне от 1 до 100';
             }
+        }
 
             function again() {
                 count=0;
@@ -86,7 +121,47 @@
             scrin[0].style.display = 'block';  
         }
 
+        function changeColor(div) {
+           if(div.style.backgroundColor == 'yellow') {
+            div.style.backgroundColor = 'red';
+            div.style.color = 'blue';
+            document.getElementById('color-name').innerHTML = 'красный';
+           }
+           else if(div.style.backgroundColor == 'red') {
+            div.style.backgroundColor = 'black';
+            div.style.color = 'yellow';
+            document.getElementById('color-name').innerHTML = 'черный';
+           }
+           else if(div.style.backgroundColor == 'black') {
+            div.style.backgroundColor = 'blue';
+            div.style.color = 'black';
+            document.getElementById('color-name').innerHTML = 'синий';
+           }
+           else if(div.style.backgroundColor == 'purple') {
+            div.style.backgroundColor = 'pink';
+            div.style.color = 'green';
+            document.getElementById('color-name').innerHTML = 'розовый';
+           }
+           else {
+            div.style.backgroundColor = 'yellow';
+            div.style.color = 'rgb(121, 44, 44)';
+            document.getElementById('color-name').innerHTML = 'желтый';
+           }
         }
+
+        function plase(smena) {
+          if (smena.style.float == 'left'){
+            smena.style.float = 'right';
+            smena.style.transition = '10000ms 1s';
+            smena.style.transform = 'rotate(4turn)';
+          }
+           else {
+            smena.style.transform = 'rotate()';
+            smena.style.float = 'left';
+            smena.style.transition = '10000ms 1s';  
+          }
+        }
+        
     </script>
 </head>
 <body>
@@ -131,13 +206,21 @@
                 <li>4. Введите новое число</li>
                 <li>5. Убедитесь, что вводите правильный диапазон</li>
                 </ol>
+        </div>
 
+        <div class="yellow" ondblclick="changeColor(this)">
+            Цвет:<span id="color-name">желтый</span><br>
+            Сделайте двойной щелчок, чтобы сменить.
+        </div>
+
+        <div class="c" onclick="plase(this)">
+            Щелкни меня
         </div>
 
     </main>
 </body>
 
-<footer>
+<footer class="footer">
     &copy; Сальник Кристина, ФБИ-14, 2 курс, 2023
 </footer>
 </html>
