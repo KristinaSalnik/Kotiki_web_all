@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сальник Кристина Андреевна, Лабораторная 5</title>
+    <title>Сальник Кристина Андреевна, Лабораторная 6</title>
     <link rel="stylesheet" href="main.css">
 
     <style>
@@ -119,71 +119,67 @@
             }
         }
 
-            function again() {
-                count=0;
-                let screens = document.getElementsByClassName('game');
-                screens[2].style.display = 'none';
-                screens[1].style.display = 'block'; 
-                number = Math.floor(Math.random() * 100) + 1; 
-                document.getElementById('try-count').innerHTML = count;
-                //document.getElementById('result').style.display = 'none';
-                document.getElementById('result').innerHTML = "";
-            }
+        function again() {
+            count=0;
+            let screens = document.getElementsByClassName('game');
+            screens[2].style.display = 'none';
+            screens[1].style.display = 'block'; 
+            number = Math.floor(Math.random() * 100) + 1; 
+            document.getElementById('try-count').innerHTML = count;
+            //document.getElementById('result').style.display = 'none';
+            document.getElementById('result').innerHTML = "";
+         }
 
 
-            function prav() {
-                let scrin = document.getElementsByClassName('pravila');
-                scrin[0].style.display = 'none';
-                scrin[1].style.display = 'block';
-            }
-            function skrit() {
-                let scrin = document.getElementsByClassName('pravila');
-                scrin[1].style.display = 'none';
-                scrin[0].style.display = 'block';  
-            }
+        function prav() {
+            let scrin = document.getElementsByClassName('pravila');
+            scrin[0].style.display = 'none';
+            scrin[1].style.display = 'block';
+        }
+        function skrit() {
+            let scrin = document.getElementsByClassName('pravila');
+            scrin[1].style.display = 'none';
+            scrin[0].style.display = 'block';  
+        }
 
-            function changeColor(div) {
-            if(div.style.backgroundColor == 'yellow') {
-                div.style.backgroundColor = 'red';
-                div.style.color = 'blue';
-                document.getElementById('color-name').innerHTML = 'красный';
-            }
-            else if(div.style.backgroundColor == 'red') {
-                div.style.backgroundColor = 'black';
-                div.style.color = 'yellow';
-                document.getElementById('color-name').innerHTML = 'черный';
-            }
-            else if(div.style.backgroundColor == 'black') {
-                div.style.backgroundColor = 'blue';
-                div.style.color = 'black';
-                document.getElementById('color-name').innerHTML = 'синий';
-            }
-            else if(div.style.backgroundColor == 'purple') {
-                div.style.backgroundColor = 'pink';
-                div.style.color = 'green';
-                document.getElementById('color-name').innerHTML = 'розовый';
-            }
-            else {
-                div.style.backgroundColor = 'yellow';
-                div.style.color = 'rgb(121, 44, 44)';
-                document.getElementById('color-name').innerHTML = 'желтый';
-            }
-            }
+        function changeColor(div) {
+        if(div.style.backgroundColor == 'yellow') {
+            div.style.backgroundColor = 'red';
+            div.style.color = 'blue';
+            document.getElementById('color-name').innerHTML = 'красный';
+        }
+        else if(div.style.backgroundColor == 'red') {
+            div.style.backgroundColor = 'black';
+            div.style.color = 'yellow';
+            document.getElementById('color-name').innerHTML = 'черный';
+        }
+        else if(div.style.backgroundColor == 'black') {
+            div.style.backgroundColor = 'blue';
+            div.style.color = 'black';
+            document.getElementById('color-name').innerHTML = 'синий';
+        }
+        else if(div.style.backgroundColor == 'purple') {
+            div.style.backgroundColor = 'pink';
+            div.style.color = 'green';
+            document.getElementById('color-name').innerHTML = 'розовый';
+        }
+        else {
+            div.style.backgroundColor = 'yellow';
+            div.style.color = 'rgb(121, 44, 44)';
+            document.getElementById('color-name').innerHTML = 'желтый';
+        }
+    }
 
-            function plase(smena) {
+        function plase(smena) {
             if (smena.style.float == 'left'){
                 smena.style.float = 'right';
                 smena.style.transition = '1000ms 1s';
-                if (smena.style.transform = 'rotate()'){
-                    smena.style.transform = 'rotate(4turn)';
-                }
-            }
+                smena.style.transform = 'rotate(4turn)';
+        }
             else {
                 smena.style.float = 'left';
-                smena.style.transition = '10000ms 1s'; 
-                if(smena.style.transform = 'rotate(4turn)'){
-                smena.style.transform = 'rotate()' 
-            }
+                smena.style.transition = '10000ms 1s';
+                smena.style.transform = 'rotate(0)' 
         }
     }
 
@@ -252,7 +248,7 @@
 </head>
 <body>
     <header>
-        НГТУ, ФБ, Лабораторная работа 4
+        НГТУ, ФБ, Лабораторная работа 6
     </header>
 
     <main>
