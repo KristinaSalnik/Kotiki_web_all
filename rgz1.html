@@ -27,12 +27,52 @@
      </menu>
 
 <main>
-    <h1>Основные финансовые показатели</h1>
+    <h1 style="color: rgb(63, 97, 175);">Основные финансовые показатели</h1>
         <p>
-            <b>Капитализация на 31.03.2023:</b> 38 543 414 165,714 рублей
+            <b>Капитализация на 31.03.2023:</b> 12 040.42 млн RUB
         </p>
         <p>
-            <b>Общее число акций, обращающихся на Московской бирже:</b> 3 854 341 416 571 +3/7
+            <b>Общее число акций, обращающихся на Московской бирже:</b> 48 746.66 млн шт
         </p>
-        <h2>Таблица с ценами закрытия за весь апрель</h2>
+        <h2>Таблица с ценами закрытия за весь май</h2>
+
+        <table border = "2" id="table"></table>
+        <div id="min" style="color: rgb(199, 140, 23); font-weight: bolder;"></div>
+        <div id="max" style="color: rgb(199, 140, 23); font-weight: bolder;"></div>
+        <div id="otklonenie"style="color: rgb(199, 140, 23); font-weight: bolder;" ></div>
+
+        <script>
+            let data = ['2-05-2023', '3-05-2023', '4-05-2023', '5-05-2023', '8-05-2023',
+                        '10-05-2023', '11-05-2023', '12-05-2023', '15-05-2023', '16-05-2023',
+                        '17-05-2023', '18-05-2023', '19-05-2023', '22-05-2023', '23-05-2023',
+                        '24-05-2023', '25-05-2023', '26-05-2023', '29-05-2023', '31-05-2023'];
+            let kurs = [0.2425,0.2470,0.0094,0.2460,0.2475,0.2500,0.2450,0.2500,0.2565,0.2435,0.2390,
+                        0.2341,0.2468,0.2432,0.2524,0.2434,0.2392,0.2376,0.2470,0.2456,];
+            let table = document.getElementById('table');
+            for(let i = 0; i < data.length; i++){
+                    let tr = document.createElement('tr');
+                    let tdData = document.createElement('td');
+                    tdData.innerHTML = data[i];
+                    tr.appendChild(tdData);
+                    let tdKurs = document.createElement('td');
+                    tdKurs.innerHTML = kurs[i];
+                    tr.appendChild(tdKurs);
+                    table.appendChild(tr);
+            }
+            let min = Math.min(...kurs);
+            document.getElementById('min').innerHTML = 'Минимальное значение: ' + min;
+            let max = Math.max(...kurs);
+            document.getElementById('max').innerHTML = 'Максимальное значение: ' + max;
+            let sum = 0;
+            for (let i = 0; i < kurs.length; i++) {
+            sum += kurs[i];
+            }
+            let avg = sum / kurs.length;
+            let variance = 0;
+            for (let i = 0; i < kurs.length; i++) {
+            variance += Math.pow(kurs[i] - avg, 2);
+            }
+            let otklonenie = Math.sqrt(variance / kurs.length);
+            document.getElementById('otklonenie').innerHTML = 'Среднеквадратическое отклонение: ' + otklonenie;
+            </script>
 </main>

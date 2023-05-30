@@ -1,77 +1,41 @@
-commit 64be2b6a6256b4c43ed8ec0ad00fe5ad48f0a8f4
+commit 58aa501d3a26b14e4f757843e567caaa543266e6
 Author: Kristina <salnikkristina@yandex.ru>
-Date:   Mon May 15 04:12:28 2023 +0700
+Date:   Wed May 31 02:15:15 2023 +0700
 
-    футболки фильтр
+    акции
 
-commit b5e72c3e34e87e91e202d9235c04addaa8bcb8d6
+commit e83c8ebfbbdd290c83970875f45625b693500c6b
 Author: Kristina <salnikkristina@yandex.ru>
-Date:   Mon May 15 04:06:51 2023 +0700
+Date:   Wed May 31 01:59:39 2023 +0700
 
-    расширяющийся блок
+    кружочки цветные
 
-commit c99bd2ae79f3996fe3d6f88e102b9e2859026c16
+commit fdcb870042a1685b57042f6d3db71368dda280f9
 Author: Kristina <salnikkristina@yandex.ru>
-Date:   Mon May 15 03:59:22 2023 +0700
+Date:   Wed May 31 01:54:17 2023 +0700
 
-    двигающийся блок
+    прозрачные блоки
 
-commit fb6756c775c82a80da903e7cef3b7ac69e152d9b
+commit 5c6cef8c6012c54a35b635d3d008d6634701eb4c
 Author: Kristina <salnikkristina@yandex.ru>
-Date:   Mon May 15 03:46:28 2023 +0700
+Date:   Wed May 31 01:36:18 2023 +0700
 
-    перебор цветов
+    курс доллара
 
-commit 2849f22924d2ccc6c43f6724c85ead4f3576b982
+commit 4d2c0bec03829c3e16db91d7b335bf4ed341928b
 Author: Kristina <salnikkristina@yandex.ru>
-Date:   Mon May 15 03:23:05 2023 +0700
+Date:   Wed May 31 01:27:09 2023 +0700
 
-    правила игры, должны работать но нет
+    блоки конец
 
-commit 1fea1c46264cf1699d29800cfcb4cb87305d7e67
+commit 1e90bf7f61859fffa91ac4654f3e0d4dad48a1ef
 Author: Kristina <salnikkristina@yandex.ru>
-Date:   Fri May 12 16:43:13 2023 +0700
+Date:   Wed May 31 01:23:09 2023 +0700
 
-    ошибка в кнопке сыграть еще раз
+    блоки
 
-commit fa0712ac552a5da1c9bfa8b3a05d03abe903377d
+commit 89ee5ac08711293264bb2f9ad0900e15ccd0b719
 Author: Kristina <salnikkristina@yandex.ru>
-Date:   Thu May 11 20:22:23 2023 +0700
+Date:   Wed May 31 01:17:06 2023 +0700
 
-    скрытие кругов
-
-commit 710a24574c0013070ab4c6f4ba6ee2e29436fa82
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Wed May 10 23:34:33 2023 +0700
-
-    исправила index.html
-
-commit 6513d43f926dfbc5d666b03e44dda333010048bb
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Wed May 10 23:31:18 2023 +0700
-
-    поправки лабораторной 4
-
-commit 564bec24bf01d0384113179ba6c12855c3ec2fca
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Wed May 10 15:03:46 2023 +0700
-
-    6 prodolgit
-
-commit 001a27b264098e450cd9b643ec5b0bf8393d7685
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Wed May 3 13:24:56 2023 +0700
-
-    доделать кнопку возврата
-
-commit 1368c895e7f9879219c8fe563749d729678d2515
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Wed May 3 12:50:04 2023 +0700
-
-    Сделать кнопку сыграть еще раз
-
-commit 4cfd67c94462286f00f4f5922b85b278468b8ece
-Author: Kristina <salnikkristina@yandex.ru>
-Date:   Wed May 3 10:51:58 2023 +0700
-
-    заготовка 6 лабораторной
+    заготовка лаба 7
