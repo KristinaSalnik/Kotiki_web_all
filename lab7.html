@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сальник Кристина Андреевна, Лабораторная 7</title>
     <link rel="stylesheet" href="main.css">
-    <style>
-
-    </style>
+    
     <script>
           function addBlocks(){
             let blocks = document.getElementById('blocks');
@@ -68,6 +66,54 @@
                 circles.appendChild(circle);
             }
         }
+
+        function UmnTable() {
+            let umn = document.getElementById('umn');
+            for (let i = 13; i < 34; i++){
+                let table = document.createElement('div');
+                table.innerHTML = i + '*' + 74 + '='+ (i*74);
+                table.style.color = 'red'
+                umn.appendChild(table);
+            }
+        }
+
+        function Akziya() {
+            let data = ['31-05-2023', '29-05-2023', '26-05-2023', '25-05-2023', '24-05-2023',
+                        '23-05-2023', '22-05-2023', '19-05-2023', '18-05-2023', '17-05-2023'];
+            let kurs = [0, 188.12, 191.80, 190.30, 189.91, 187.52, 186.86,
+                        188.90, 189.36, 190.18];
+            let tab = document.getElementById('rossety');
+            for(let i = 0; i < data.length; i++){
+                let tr = document.createElement('tr');
+                let tdData = document.createElement('td');
+                tdData.innerHTML = data[i];
+                tr.appendChild(tdData);
+                let tdKurs = document.createElement('td');
+                tdKurs.innerHTML = kurs[i];
+                tr.appendChild(tdKurs);
+                let tdRazn = document.createElement('td');
+                if (i==0){
+                    tdRazn.innerHTML = '-';
+                }
+                else {
+                    tdRazn.innerHTML = (kurs[i]-kurs[i-1]).toFixed(2);
+                }
+                tr.appendChild(tdRazn);
+                tab.appendChild(tr);
+            }
+            let sum = 0;
+            for(let i = 0; i < kurs.length; i++) {
+                sum = sum + kurs[i];
+            }
+            let middle = sum / kurs.length;
+            document.getElementById('middle').innerHTML = 'Среднее значение: ' + middle;
+
+            let min = Math.min(...kurs);
+            document.getElementById('min').innerHTML = 'Минимальное значение: '+ min;
+
+            let max = Math.max(...kurs);
+            document.getElementById('max').innerHTML = 'Максимальное значение: ' + max;
+        }
     </script>
 </head>
 <body>
@@ -90,6 +136,15 @@
         <input type="number" value="5" placeholder="Введите число кругов" id="numCurcles">
         <button onclick="createCircles()">зеленый-синий</button>
         <div id="circles"></div>
+
+        <button onclick="UmnTable()">Таблица умножения на 74</button>
+        <div id="umn"></div>
+
+        <button onclick="Akziya()">Курс акций «Мечел»</button>
+        <table border = '3' id ='rossety'></table>
+        <div id="middle"></div>
+        <div id="min"></div>
+        <div id="max"></div>
     </main>
     <footer>
         &copy; Сальник Кристина, ФБИ-14, 2 курс, 2023
