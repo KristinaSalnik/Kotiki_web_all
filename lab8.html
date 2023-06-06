@@ -18,11 +18,16 @@
     <main>
         <div id="current-date"></div>
         <div>
-            <label>Дата рождения: <input type='date'></label>
+            <label style="color: palevioletred; font-family: monserat; font-size: 20px;">Дата рождения: <input type='date' id="d"></label>
         </div>
         <div>
             <button onclick="showDaysCount()">Показать число дней</button>
         </div> 
+
+        <div id="rojd" style="color: palevioletred; font-family: monserat; font-size: 20px;">
+            Количество дней с даты рождения:
+        </div>
+        <button onclick="detet()">Очистить</button>
     </main>
 
 </body>
