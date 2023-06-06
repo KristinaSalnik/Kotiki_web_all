@@ -5,8 +5,7 @@ body {
     margin: 0px;
 }
 
-header {
-    background: linear-gradient(to top, black, palevioletred);
+header {background: linear-gradient(to top, black, palevioletred);
     color: lightgoldenrodyellow;
     padding: 15px; 
     font-size: 16pt;
