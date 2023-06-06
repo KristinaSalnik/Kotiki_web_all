@@ -7,13 +7,22 @@
     <title>Сальник Кристина Андреевна, Лабораторная 8</title>
     <link rel="stylesheet" href="main.css">
 
+    <style></style>
+    <script src="lab8.js"></script>
 </head>
-<body>
+<body onload="showDate()">
     <header>
         НГТУ, ФБ, Лабораторная работа 8
     </header>
 
     <main>
+        <div id="current-date"></div>
+        <div>
+            <label>Дата рождения: <input type='date'></label>
+        </div>
+        <div>
+            <button onclick="showDaysCount()">Показать число дней</button>
+        </div> 
     </main>
 
 </body>
